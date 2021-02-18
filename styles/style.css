@@ -1,0 +1,366 @@
+body {
+  background-color: #ff6a6a;
+  font-family: "Times New Roman";
+  background-image: url('../images/apple_background.jpg');
+  /*Source: (Original work) Maria Lindsey https://www.pexels.com/photo/photography-of-pile-of-apples-1453713/*/
+  background-repeat: repeat;
+  top: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+
+
+/*Header styling*/
+header {
+  display: block;
+  background-color: #d57d7d;
+  border-bottom: solid;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+header img{
+  width: 10%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  margin-left: -30px;
+}
+
+nav ul li{
+  font-family: 'Calibri';
+  display: inline;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+nav a {
+  color: black;
+  padding: 25px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*Main Content styling*/
+.main_content {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #d57d7d;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+h3 {
+  text-align: center;
+}
+
+li {
+  list-style-image: url('../images/apple_list_icon.png');
+  /* Source: (original work) Austin Brown */
+}
+
+em {
+  font-weight: bold;
+}
+
+
+
+/*Figure styling*/
+figure {
+  margin: 10px;
+}
+
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  margin-top: 15px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+
+
+/*Table styling*/
+table {
+  background-color: #c2c2c2;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td, th {
+  border: 1px solid #949494;
+}
+
+.table_day {
+  font-size: 120%;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+
+
+/*Double List styling*/
+.double_list {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*Photo Row styling*/
+.photo_row {
+  display: flex;
+}
+
+.photo_row figure img {
+  width: 100%;
+  height: auto;
+}
+
+.photo_row img {
+  width: 40%;
+  height: auto;
+}
+
+
+
+/*Footer styling*/
+footer {
+  background-color: #d57d7d;
+  display: flex;
+  border-top-style: solid;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.email {
+  text-align: right;
+  flex-grow: 1;
+  width: 20%;
+  padding-left: 50%;
+}
+
+.background_source {
+  width: 20%;
+}
+
+footer a{
+  word-break: break-all;
+}
+
+/*Form styling*/
+form {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+label {
+  width: 25%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.input_label {
+  display: flex;
+}
+
+.submit {
+  display: block;
+  margin-left: auto;
+  margin-right: 25%;
+}
+
+/*Feedback styling for form*/
+.hide {
+  display: none;
+}
+
+.input_feedback {
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.feedback {
+  font-weight: bold;
+  font-size: 125%;
+  margin-left: calc(25% + 10px);
+}
+
+form {
+  margin-top: 50px;
+}
+
+.left_align {
+  text-align: left;
+}
+
+.input_extra_comment {
+  padding-bottom: 15px;
+}
+
+form p {
+  margin-left: calc(25% + 10px);
+}
+.input_extra_comment p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#name {
+  width: 160px;
+}
+
+#phone_number {
+  width: 100px;
+}
+
+#email {
+  width: 190px;
+}
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+
+
+  /*Header styling*/
+  header img{
+    width: 20%;
+    height: auto;
+  }
+
+  nav ul li{
+    display: block;
+    border-style: solid;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+
+
+  /*Main Content styling*/
+  .main_content {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+
+
+  /*Photo Row styling*/
+  .photo_row {
+    display: block;
+  }
+
+  .photo_row img {
+    width: 100%;
+  }
+
+
+
+  /*Footer styling*/
+  .email {
+    padding-left: 50%;
+  }
+
+  input[type=submit] {
+    display: block;
+
+  }
+
+  input, label {
+    display: block;
+  }
+
+  .input_label {
+    display: block;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  .input_extra_comment p {
+    margin-left: 0px;
+  }
+
+  #email {
+    width: 180px;
+  }
+
+  .submit {
+    margin-right: 0px;
+  }
+
+  .feedback {
+    margin-left: 0px;
+  }
+
+  form p {
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 900px) and (min-width:600px) {
+  /*Photo Row styling*/
+  .photo_row {
+    display: block;
+  }
+}
